@@ -1,0 +1,38 @@
+{% extends 'message_templates/common.html' %}
+{% block title_block %}Templates {{type|capitalize}} Edit{% endblock title_block %}
+{% block content %}
+<div class="col-lg-12">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <strong>Edit Template</strong>
+        </div>
+        <!-- /.panel-heading -->
+        <div class="panel-body">
+            <form role="form">
+                <div class="form-group">
+                    <label>Title</label>
+                    <input class="form-control">
+                    <p class="help-block">Name of the template to remember by.</p>
+                </div>
+                <div class="form-group">
+                    <label>Subject</label>
+                    <input class="form-control" placeholder="Enter text">
+                    <p class="help-block">Subject for the template (especially for emails).</p>
+                </div>
+                <div class="form-group">
+                    <label>Body</label>
+                    <p class="form-control-static">Copy Paste the Template from your template code</p>
+                    <textarea class="form-control" rows="20"></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn btn-info">Save Template</button>
+                </div>
+            </form>
+
+        </div>
+        <!-- /.panel-body -->
+    </div>
+   <!-- /.panel -->
+</div>
+{% endblock content %}
+

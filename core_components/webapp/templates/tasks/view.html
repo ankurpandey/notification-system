@@ -1,0 +1,24 @@
+{% extends 'message_templates/common.html' %}
+{% block title_block %}Templates {{type|capitalize}} View{% endblock title_block %}
+{% block content %}
+<div class="col-lg-12">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <strong>{{ task.notification_type }} ({{ task.template.title }})</strong>
+        </div>
+        <!-- /.panel-heading -->
+        <div class="panel-body">
+            <div><strong>Subject:&nbsp;</strong> {{ task.template.subject }}</div>
+            <div><strong>Type:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong> {{ task.status|upper }}</div>
+
+        </div>
+        <!-- /.panel-body -->
+    </div>
+    <!--div class="well">
+        <h4>Template Body</h4>
+        <p></p>
+    </div-->
+    <!-- /.panel -->
+</div>
+{% endblock content %}
+
